@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400;1,600;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.container-box-content-icon{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.container-box-content-icon .card{
+    position: relative;
+    width: 100%;
+    background: #f5fafd;
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.container-box-content-icon .card .img-box
+{
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+
+.container-box-content-icon .card .img-box img
+{
+    max-width: 100%;
+}
+
+.container-box-content-icon .card .content{
+    margin-left: 20px;
+}
+
+.container-box-content-icon .card .content .h2-box-content-icon{
+    font-size: 1.5em;
+}
+
+@media (max-width: 991px) {
+    .container-box-content-icon{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-box-content-icon{
+        flex-direction: column;
+    }
+
+    .container-box-content-icon .card{
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .container-box-content-icon .card .img-box{
+        max-width: 100%;
+    }
+
+    .container-box-content-icon .card .content{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
