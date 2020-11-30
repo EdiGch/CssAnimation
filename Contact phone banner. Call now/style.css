@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400;1,600;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d192e;
+    min-height: 100vh;
+}
+
+.contact-phone-banner{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px;
+    height: auto;
+    background: #122647;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-phone-banner .img-box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.9;
+    text-align: center;
+    cursor: pointer;
+}
+.contact-phone-banner .img-box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff5064;
+    transform-origin: bottom;
+    transform: skewX(-35deg);
+    z-index: -1;
+}
+
+.contact-phone-banner .img-box span{
+    height: 200px;
+    padding: 10px;
+    font-size: 3em;
+    color: #ffffff;
+    bottom: 0;
+    max-height: 95%;
+    z-index: -2;
+}
+
+.contact-phone-banner .img-box span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-phone-banner .form-box{
+    width: 50%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.contact-phone-banner .form-box .font-h2{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+.contact-phone-banner .form-box .light-text{
+    margin-bottom: 15px;
+}
+
+@media(max-width: 991px){
+    .contact-phone-banner {
+        flex-direction: column;
+    }
+    .contact-phone-banner .form-box{
+        width: 100%;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .contact-phone-banner .form-box .light-text{
+        font-size: 0.8em;
+    }
+    .contact-phone-banner .img-box{
+        text-align: center;
+        width: 100%;
+        font-size: 2em;
+    }
+    .contact-phone-banner .img-box:before{
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
